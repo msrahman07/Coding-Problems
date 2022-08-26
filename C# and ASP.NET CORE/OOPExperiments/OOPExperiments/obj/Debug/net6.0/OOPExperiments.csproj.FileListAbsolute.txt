@@ -1,0 +1,15 @@
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\bin\Debug\net6.0\OOPExperiments.exe
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\bin\Debug\net6.0\OOPExperiments.deps.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\bin\Debug\net6.0\OOPExperiments.runtimeconfig.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\bin\Debug\net6.0\OOPExperiments.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\bin\Debug\net6.0\OOPExperiments.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.csproj.AssemblyReference.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.AssemblyInfoInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.AssemblyInfo.cs
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.csproj.CoreCompileInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\refint\OOPExperiments.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\OOPExperiments.genruntimeconfig.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\OOPExperiments\OOPExperiments\obj\Debug\net6.0\ref\OOPExperiments.dll

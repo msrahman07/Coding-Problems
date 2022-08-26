@@ -1,0 +1,15 @@
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\bin\Debug\net6.0\PlayHiLo.exe
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\bin\Debug\net6.0\PlayHiLo.deps.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\bin\Debug\net6.0\PlayHiLo.runtimeconfig.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\bin\Debug\net6.0\PlayHiLo.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\bin\Debug\net6.0\PlayHiLo.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.csproj.AssemblyReference.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.AssemblyInfoInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.AssemblyInfo.cs
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.csproj.CoreCompileInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\refint\PlayHiLo.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\PlayHiLo.genruntimeconfig.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\PlayHiLo\PlayHiLo\obj\Debug\net6.0\ref\PlayHiLo.dll
