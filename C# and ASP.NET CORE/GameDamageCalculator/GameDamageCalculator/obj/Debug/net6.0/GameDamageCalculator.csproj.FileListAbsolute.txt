@@ -1,0 +1,15 @@
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\bin\Debug\net6.0\GameDamageCalculator.exe
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\bin\Debug\net6.0\GameDamageCalculator.deps.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\bin\Debug\net6.0\GameDamageCalculator.runtimeconfig.json
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\bin\Debug\net6.0\GameDamageCalculator.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\bin\Debug\net6.0\GameDamageCalculator.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.csproj.AssemblyReference.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.AssemblyInfoInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.AssemblyInfo.cs
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.csproj.CoreCompileInputs.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\refint\GameDamageCalculator.dll
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.pdb
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\GameDamageCalculator.genruntimeconfig.cache
+C:\Users\sakib\Desktop\Shahriar\Codes\ASP\Projects\GameDamageCalculator\GameDamageCalculator\obj\Debug\net6.0\ref\GameDamageCalculator.dll
