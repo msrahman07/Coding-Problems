@@ -4,7 +4,10 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        SecretAgent agent1 = new();
-        agent1.AgentGreeting("code");
+        IClown[] newClown = new IClown[2];
+        TallGuy tallGuy = new TallGuy() { Height = 76, Name = "Jimmy" };
+        tallGuy.TalkAboutYourself();
+        Console.WriteLine($"The tall guy has {tallGuy.FunnyThingIHave}");
+        tallGuy.Honk();
     }
 }
