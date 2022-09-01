@@ -20,5 +20,9 @@ namespace PlayingCards
             Value = value;
             Suite = suite;
         }
+        public override string ToString()
+        {
+            return Name;
+        }
     }
 }

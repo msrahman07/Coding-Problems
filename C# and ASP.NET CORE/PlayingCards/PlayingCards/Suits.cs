@@ -8,9 +8,9 @@ namespace PlayingCards
 {
     internal enum Suits
     {
-        Spades, 
+        Diamonds,
         Clubs, 
-        Diamonds, 
         Hearts,
+        Spades,
     }
 }

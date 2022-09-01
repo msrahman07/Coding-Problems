@@ -8,22 +8,21 @@ namespace PlayingCards
 {
     internal class Deck
     {
-        private readonly Card[] cards = new Card[52];
+        public readonly List<Card> cards = new List<Card> { };
 
         public Deck()
         {
-            int index = 0;
             for (int suit = 0; suit <= 3; suit++)
             {
                 for (int value = 1; value <= 13; value++)
                 {
-                    cards[index++] = new Card((Values)value, (Suits)suit);
+                    cards.Add(new Card((Values)value, (Suits)suit));
                 }
             }
         }
         public void PrintCards()
         {
-            for (int i = 0; i < cards.Length; i++)
+            for (int i = 0; i < cards.Count; i++)
                 Console.WriteLine(cards[i].Name);
         }
     }
