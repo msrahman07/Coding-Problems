@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,8 @@ using System.Threading.Tasks;
 
 namespace TwoDecksWPF
 {
-    internal class Deck
+    using System.Collections.ObjectModel;
+    internal class Deck : ObservableCollection<Card>
     {
         public List<Card> Cards { get; } = new List<Card> { };
         private static readonly Random random = new Random();
@@ -15,19 +17,22 @@ namespace TwoDecksWPF
 
         public Deck()
         {
+            Reset();
+        }
+        public void Reset()
+        {
+            Clear();
+            Cards.Clear();
             for (int suit = 0; suit <= 3; suit++)
             {
                 for (int value = 1; value <= 13; value++)
                 {
                     Cards.Add(new Card((Values)value, (Suits)suit));
+                    Add(new Card((Values)value, (Suits)suit));
                 }
             }
         }
-        public void PrintCards()
-        {
-            for (int i = 0; i < Cards.Count; i++)
-                Console.WriteLine(Cards[i].Name);
-        }
+        
 
         private int CompareCards(Card? x, Card? y)
         {
@@ -61,10 +66,22 @@ namespace TwoDecksWPF
         public void Sort()
         {
             this.Cards.Sort(CompareCards);
+            Clear();
+            foreach(Card card in Cards)
+            {
+                Add(card);
+            }
         }
         public void Shuffle()
         {
             this.Cards.Sort(ShuffleCards);
+            Clear();
+            foreach (Card card in Cards)
+            {
+                Add(card);
+            }
         }
+
+        
     }
 }

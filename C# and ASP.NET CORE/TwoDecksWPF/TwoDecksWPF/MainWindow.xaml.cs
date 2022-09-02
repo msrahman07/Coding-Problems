@@ -22,38 +22,35 @@ namespace TwoDecksWPF
     /// </summary>
     public partial class MainWindow : Window
     {
-        private Deck deckOne = new Deck();
-        private List<Card> deckTwo;
-
         public MainWindow()
         {
             InitializeComponent();
-            deck1List.ItemsSource = deckOne.Cards;
+            if (Resources["rightDeck"] is Deck rightDeck)
+            {
+                rightDeck.Clear();
+            }
 
         }
 
         private void ShuffleButton_Click(object sender, RoutedEventArgs e)
         {
-            deckOne.Shuffle();
-            deck1List.ItemsSource = new List<Card>();
-            deck1List.ItemsSource = deckOne.Cards;
+            if (Resources["leftDeck"] is Deck leftDeck)
+            {
+                leftDeck.Shuffle();
+            }
         }
 
         private void ResetButton_Click(object sender, RoutedEventArgs e)
         {
-            deckOne.Sort();
-            deck1List.ItemsSource = new List<Card>();
-            deck1List.ItemsSource = deckOne.Cards;
-        }
-
-        private void ClickedOnDeck1(object sender, MouseButtonEventArgs e)
-        {
-            deck2List.Items.Add(sender as Card);
+            if (Resources["leftDeck"] is Deck leftDeck)
+            {
+                leftDeck.Reset();
+            }
         }
 
         private void ListItem_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            deck2List.Items.Add(sender as Card);
+            
         }
     }
 }

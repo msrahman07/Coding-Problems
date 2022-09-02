@@ -6,24 +6,27 @@
         xmlns:local="clr-namespace:TwoDecksWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="600">
-    
+
+    <Window.Resources>
+        <local:Deck x:Key="leftDeck" />
+        <local:Deck x:Key="rightDeck" />
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" VerticalAlignment="Top" Margin="20,20,20,0" MaxHeight="800">
-            <Label Content="Deck 1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
-            <ListBox x:Name="deck1List" Margin="20" ScrollViewer.CanContentScroll="True" MinHeight="500" MaxHeight="500">
-                    <ListItem MouseDown="ListItem_MouseDown"/>
+            <Label Target="{Binding ElementName=deck1List, Mode=OneWay}" Content="Deck 1" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
+            <ListBox x:Name="deck1List" ItemsSource="{DynamicResource leftDeck}" Margin="20" MinHeight="500" MaxHeight="500">
             </ListBox>
             <Button x:Name="ShuffleButton" Content="Shuffle" Margin="20" FontSize="18" Click="ShuffleButton_Click"/>
             <Button x:Name="ResetButton" Content="Reset" Margin="20" FontSize="18" Click="ResetButton_Click"/>
 
         </StackPanel>
         <StackPanel Grid.Column="1" VerticalAlignment="Top" Margin="20,20,20,0">
-            <Label Content="Deck 2" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
-            <ListBox x:Name="deck2List" Margin="20" ScrollViewer.CanContentScroll="True" MinHeight="500" MaxHeight="500">
+            <Label Target="{Binding ElementName=deck2List, Mode=OneWay}" Content="Deck 2" VerticalAlignment="Top" HorizontalContentAlignment="Center" FontSize="20" FontWeight="Bold"/>
+            <ListBox ItemsSource="{DynamicResource rightDeck}" x:Name="deck2List" Margin="20" MinHeight="500" MaxHeight="500">
             </ListBox>
             <Button Content="Button" Margin="20" FontSize="18"/>
             <Button Content="Button" Margin="20" FontSize="18"/>
