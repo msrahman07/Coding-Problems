@@ -8,6 +8,8 @@ internal class Program
         
         Deck deck = new Deck();
         List<Card> cards = deck.cards;
+
+
         /*
         Console.WriteLine("Enter number of Cards: ");
         if (int.TryParse(Console.ReadLine(), out int numberOfCards))
@@ -23,12 +25,24 @@ internal class Program
         CardComparerByValue cardComparerByValue = new CardComparerByValue();
         cards.Sort(cardComparerByValue.Compare);
         */
-        PrintCards(cards);
-        Console.WriteLine("\n........Sorting cards........\n");
-        cards.Sort(ShuffleCards);
-        PrintCards(cards);
-        Console.WriteLine($"\n{cards.Count}");
-
+        //PrintCards(cards);
+        Console.WriteLine("\n........Shuffling cards........\n");
+        //cards.Sort(ShuffleCards);
+        /*PrintCards(cards);*/
+        //Console.WriteLine($"\n{cards.Count}");
+        Console.WriteLine("\n........Grouping cards........\n");
+        var grouped =
+                    from card in cards
+                    group card by card.Suite into suitGroup
+                    orderby suitGroup.Key descending
+                    select suitGroup;
+        foreach (var group in grouped)
+        {
+            Console.WriteLine(@$"Group: {group.Key}
+Count: {group.Count()}
+Minimum: {group.Min()}
+Maximum: {group.Max()}");
+        }
     }
     private static Card RandomCard()
     {
