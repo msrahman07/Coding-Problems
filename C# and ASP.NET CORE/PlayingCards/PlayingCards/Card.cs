@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PlayingCards
 {
-    internal class Card
+    internal class Card : IComparable<Card>
     {
         public Values Value { get; set; }
         public Suits Suite { get; set; }
@@ -23,6 +23,47 @@ namespace PlayingCards
         public override string ToString()
         {
             return Name;
+        }
+        public int Compare(Card? x, Card? y)
+        {
+            if (x.Suite > y.Suite)
+            {
+                return 1;
+            }
+            if (x.Suite < y.Suite)
+            {
+                return -1;
+            }
+            if (x.Value > y.Value)
+            {
+                return 1;
+            }
+            if (x.Value < y.Value)
+            {
+                return -1;
+            }
+            return 0;
+        }
+
+        public int CompareTo(Card? other)
+        {
+            if (this.Suite > other.Suite)
+            {
+                return 1;
+            }
+            if (this.Suite < other.Suite)
+            {
+                return -1;
+            }
+            if (this.Value > other.Value)
+            {
+                return 1;
+            }
+            if (this.Value < other.Value)
+            {
+                return -1;
+            }
+            return 0;
         }
     }
 }

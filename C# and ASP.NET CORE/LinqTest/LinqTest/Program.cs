@@ -7,7 +7,29 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        IEnumerable<Comic> mostExpensive = from comic in Comic.Catalog
+        int[] array = new int[] { 1, 2, 3, 4 };
+        var result1 = array.Select(i => i * 2);
+        foreach(int i in result1)
+        {
+            //Console.WriteLine(i);
+        }
+        int[] values = new int[] { 0, 12, 44, 36, 92, 54, 13, 8 };
+        IEnumerable<int> result = from v in values
+                                  where v < 37
+                                  orderby -v
+                                  select v;
+        var result2 = values.Where(value => value < 37).OrderBy(val => -val);
+        foreach (int i in result)
+        {
+            Console.WriteLine(i);
+        }
+        Console.WriteLine("===============================");
+
+        foreach (int i in result2)
+        {
+            Console.WriteLine(i);
+        }
+        /*IEnumerable<Comic> mostExpensive = from comic in Comic.Catalog
                                            where Comic.Prices[comic.Issue] > 500
                                            orderby Comic.Prices[comic.Issue] descending
                                            select comic;
@@ -17,7 +39,7 @@ internal class Program
         }
 
         List<object> list = new() { 1, 2, "string", new Comic()};
-        Console.WriteLine(String.Join(", ", list.Take(2)));
+        Console.WriteLine(String.Join(", ", list.Take(2)));*/
         /*List<int> numbers = new List<int>();
 
         for (int i = 2; i <= 99; i++)

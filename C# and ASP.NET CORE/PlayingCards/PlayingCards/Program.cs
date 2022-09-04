@@ -1,47 +1,26 @@
 ﻿using PlayingCards;
-
+using System.Linq;
 internal class Program
 {
     private static readonly Random random = new Random();
+    static string Output(Suits suit, int number) => $"Suit is {suit} and number is {number}";
     private static void Main(string[] args)
     {
-        
-        Deck deck = new Deck();
-        List<Card> cards = deck.cards;
-
-
-        /*
-        Console.WriteLine("Enter number of Cards: ");
-        if (int.TryParse(Console.ReadLine(), out int numberOfCards))
+        var deck = new Deck();
+        var processedCards = deck.Take(3)
+        .Concat(deck.TakeLast(3))
+        .OrderByDescending(card => card)
+        .Select(card => card.Value switch
         {
-            for(int i=0; i < numberOfCards; i++)
-            {
-                cards.Add(RandomCard());
-            }
-        }
-        
-        PrintCards(cards);
-        Console.WriteLine("\n........Sorting cards........\n");
-        CardComparerByValue cardComparerByValue = new CardComparerByValue();
-        cards.Sort(cardComparerByValue.Compare);
-        */
-        //PrintCards(cards);
-        Console.WriteLine("\n........Shuffling cards........\n");
-        //cards.Sort(ShuffleCards);
-        /*PrintCards(cards);*/
-        //Console.WriteLine($"\n{cards.Count}");
-        Console.WriteLine("\n........Grouping cards........\n");
-        var grouped =
-                    from card in cards
-                    group card by card.Suite into suitGroup
-                    orderby suitGroup.Key descending
-                    select suitGroup;
-        foreach (var group in grouped)
+            Values.King => Output(card.Suite, 7),
+            Values.Ace => $"It's an ace! {card.Suite}",
+            Values.Jack => Output((Suits)card.Suite - 1, 9),
+            Values.Two => Output(card.Suite, 18),
+            _ => card.ToString(),
+        });
+        foreach (var output in processedCards)
         {
-            Console.WriteLine(@$"Group: {group.Key}
-Count: {group.Count()}
-Minimum: {group.Min()}
-Maximum: {group.Max()}");
+            Console.WriteLine(output);
         }
     }
     private static Card RandomCard()
