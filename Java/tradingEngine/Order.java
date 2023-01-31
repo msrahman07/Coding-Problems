@@ -1,5 +1,4 @@
-package TradingSystem;
-
+package tradingEngine;
 import java.math.BigDecimal;
 
 public class Order {
@@ -11,11 +10,11 @@ public class Order {
     long amount;
 
     // constructing order based on symbol, buy/sell, price and amount
-    Order(String s, boolean b, boolean a, BigDecimal p, long am) {
-        symbol = s;
-        bid = b;
-        ask = a;
-        price = p;
-        amount = am;
+    Order(String symbol, boolean bid, boolean ask, BigDecimal price, long amount) {
+        this.symbol = symbol;
+        this.bid = bid;
+        this.ask = ask;
+        this.price = price;
+        this.amount = amount;
     }
 }
