@@ -7,7 +7,7 @@ import java.util.Map;
 public class RouteBetweenNodes {
      public boolean validPath(int n, int[][] edges, int source, int destination) {
         // Store all edges in graph
-        Map<Integer, List<Integer>> graph = new HashMap();
+        Map<Integer, List<Integer>> graph = new HashMap<Integer, List<Integer>>();
         for(int[] edge : edges) {
             int a = edge[0], b = edge[1];
             graph.computeIfAbsent(a, val -> new ArrayList<Integer>()).add(b);
@@ -17,7 +17,7 @@ public class RouteBetweenNodes {
         boolean[] visited = new boolean[n];
         visited[source] = true;
 
-        LinkedList<Integer> queue = new LinkedList();
+        LinkedList<Integer> queue = new LinkedList<Integer>();
         queue.offer(source);
 
         while(!queue.isEmpty()) {
